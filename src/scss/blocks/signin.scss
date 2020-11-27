@@ -1,0 +1,39 @@
+//Sing-in
+.signin {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #C31827;
+   background-image: url(../img/pattern-red.svg);
+   background-repeat: repeat-x;
+   height: 100%;
+   &__dialog {
+      width: 509px;
+      background: #ffffff;
+      border-radius: 20px;
+      text-align: center;
+      padding: 64px;
+   }
+   &__title {
+      color: $title-color;
+      font-size: 28px;
+   }
+   & .f-control {
+      width: 300px;
+   }
+   &__btn {
+      display: block;
+      margin: 0 auto 2.5rem auto;
+   }
+   &__reg {
+      display: block;
+      color: $title-color;
+      text-decoration: none;
+      margin-bottom: 24px;
+   }
+   &__text {
+      display: block;
+      color: #adadad;
+      text-decoration: none;
+   }
+}

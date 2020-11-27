@@ -1,0 +1,127 @@
+
+.btn {
+   display: inline-block;
+   border: 1px solid $primary-color;
+   border-radius: 8px;
+   background-color: transparent;
+   font-size: 1rem;
+   line-height: 48px;
+   text-decoration: none;
+   padding: 0 1.5rem;
+   height: 48px;
+   cursor: pointer;
+   transition: all 0.2s;
+   &:hover {
+      background-color: $primary-color;
+      color: #ffffff;
+   }
+   &-primary {
+      background-color: $primary-color;
+      color: #ffffff;
+      &:hover {
+         background-color: darken($primary-color, 10%);
+      }
+   }
+
+   &-dark {
+      background-color: $dark-color;
+      border: $dark-color;
+      color: #ffffff;
+      &:hover {
+         background-color: darken($dark-color, 10%);
+      }
+   }
+
+   &-grey {
+      background-color: $grey-color;
+      border: $grey-color;
+      color: #000;
+      &:hover {
+         background-color: darken($grey-color, 10%);
+         color: #000;
+      }
+   }
+}
+
+.btn-round {
+   display: inline-flex;
+   flex: 0 0 40px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+   cursor: pointer;
+   transition: All 0.3s ease 0s;
+   & img {
+      display: block;
+   }
+   &:hover {
+      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
+   }
+
+   &-sm {
+      flex: 0 0 32px
+      ;width: 32px;
+      height: 32px;
+   }
+}
+
+
+.btn-rect {
+   display: inline-flex;
+   flex: 0 0 48px;
+   width: 48px;
+   height: 48px;
+   border-radius: 8px;
+   background-color: #e7e7e7;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+   & img {
+      display: block;
+   }
+}
+
+.btn-burger {
+   z-index: 5;
+   position: absolute;
+   top: 24px;
+   left: 24px;
+   display: inline-flex;
+   width: 48px;
+   height: 48px;
+   border-radius: 8px;
+   background-color: #ffffff;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+   transition: All 0.3s ease 0s;
+   cursor: pointer;
+   &:hover {
+      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+   }
+}
+
+.btn-info {
+   position: relative;
+}
+
+.btn-icon--upload {
+   display: inline-block;
+   position: relative;
+   width: 20px;
+   height: 20px;
+   margin-right: 8px;
+}
+.btn-icon--upload:before {
+   position: absolute;
+   top: 4px;
+   left: 0;
+   content: '';
+   width: 20px;
+   height: 20px;
+   background: url(../img/svg/upload-ico.svg) center no-repeat;
+}
